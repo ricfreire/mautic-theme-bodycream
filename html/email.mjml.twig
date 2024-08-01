@@ -1,0 +1,94 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Cormorant Garamond" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"></mj-font>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"></mj-font>
+    <mj-attributes>
+      <mj-all font-family="Roboto, Helvetica, Arial, sans-serif" font-weight="400"></mj-all>
+      <mj-text align="center"></mj-text>
+    </mj-attributes>
+    <mj-style>
+      .bd-text a { text-decoration: underline; color: unset; }
+      .bc-banner { font-variant-numeric: lining-nums; }
+      p { margin: 0px 0px 0px 0px; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#c8a69c">
+    <!-- Webview tag -->
+    <mj-section background-color="transparent" padding="16px 0px 16px 0px">
+      <mj-column>
+        <mj-text color="#141010" font-size="14px" padding="0px" css-class="bd-text" line-height="22px">{webview_text}</mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Hero -->
+    <mj-section background-color="#fff" padding="40px 30px">
+      <mj-column>
+        <mj-image padding="0px" width="180px" src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true ) }}"></mj-image>
+        <mj-spacer height="40px"></mj-spacer>
+        <mj-text padding="0px" letter-spacing="-4px" line-height="62px" font-size="60px" font-weight="500" font-family="Cormorant Garamond, Times, serif" color="#0F3BD2">
+          NOURISH,<br>REVITALIZE,<br>SHINE.
+        </mj-text>
+        <mj-spacer height="40px"></mj-spacer>
+        <mj-text padding="0px" font-size="16px" color="#0F3BD2" line-height="24px" css-class="bd-text">
+          Hello {contactfield=firstname}, we're excited to introduce our new body cream enriched with Omega, designed to nourish and revitalize your already amazing skin like never before.
+        </mj-text>
+        <mj-spacer height="40px"></mj-spacer>
+        <mj-button href="#" padding="0px" inner-padding="20px 40px" border="1px solid #6D88E8" border-radius="0px" font-weight="600" font-size="16px" letter-spacing="2px" background-color="#CCD7FF" color="#0F3BD2">
+          DISCOVER MORE
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- Image -->
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-image fluid-on-mobile="true" href="#" padding="0px" src="{{ getAssetUrl('themes/'~template~'/assets/bodycream.png', null, null, true ) }}"></mj-image>
+      </mj-column>
+    </mj-section>
+    <!-- Banner -->
+    <mj-section background-color="#0F3BD2">
+      <mj-column>
+        <mj-text color="#fff" padding="0px" letter-spacing="0px" line-height="50px" font-size="44px" font-weight="500" font-family="Cormorant Garamond, Times, serif" css-class="bc-banner">
+          ✦<i> BUY 1, GET 1 FREE </i>✦
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Benefits -->
+    <mj-section background-color="#CCD7FF" padding="40px 30px">
+      <mj-group>
+        <!-- 1 -->
+        <mj-column>
+          <mj-image padding="0px" width="40px" src="https://momdoes.art/wp-content/uploads/2024/08/icon-delivery.png"></mj-image>
+          <mj-spacer height="20px"></mj-spacer>
+          <mj-text padding="0px" font-size="16px" color="#0F3BD2" line-height="24px" css-class="bd-text">Same-day delivery available</mj-text>
+        </mj-column>
+        <!-- 2 -->
+        <mj-column>
+          <mj-image padding="0px" width="40px" src="https://momdoes.art/wp-content/uploads/2024/08/icon-discount.png"></mj-image>
+          <mj-spacer height="20px"></mj-spacer>
+          <mj-text padding="0px" font-size="16px" color="#0F3BD2" line-height="24px" css-class="bd-text">Subscriber-only discounts</mj-text>
+        </mj-column>
+        <!-- 3 -->
+        <mj-column>
+          <mj-image padding="0px" width="40px" src="https://momdoes.art/wp-content/uploads/2024/08/icon-natural.png"></mj-image>
+          <mj-spacer height="20px"></mj-spacer>
+          <mj-text padding="0px" font-size="16px" color="#0F3BD2" line-height="24px" css-class="bd-text">Sustainable natural ingredients</mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    <!-- Footer -->
+    <mj-section background-color="#fff" padding="40px 30px">
+      <mj-column>
+        <mj-social mode="horizontal" icon-size="24px" padding="0px" inner-padding="8px" border-radius="60px">
+          <mj-social-element name="facebook" href="#" background-color="#0F3BD2" icon-padding="4px"></mj-social-element>
+          <mj-social-element name="instagram" href="#" background-color="#0F3BD2" icon-padding="4px"></mj-social-element>
+          <mj-social-element name="pinterest" href="#" background-color="#0F3BD2" icon-padding="4px"></mj-social-element>
+        </mj-social>
+        <mj-spacer height="30px"></mj-spacer>
+        <mj-text color="#656565" font-size="14px" padding="0px" css-class="bd-text" line-height="22px">{unsubscribe_text}</mj-text>
+        <mj-spacer height="10px"></mj-spacer>
+        <mj-text color="#656565" font-size="14px" padding="0px" css-class="bd-text" line-height="22px">Crafted with love by <a href="https://github.com/ricfreire">Ricardo Freire</a>. Mockup from Pixeden.</mj-text>
+        <mj-spacer height="10px"></mj-spacer>
+        <mj-text color="#656565" font-size="14px" padding="0px" css-class="bd-text" line-height="22px">Copyright © Your company. All rights reserved.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
